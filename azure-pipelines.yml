@@ -17,7 +17,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: PublishBuildArtifacts@1    
-  displayName: 'Publish Artifact: drop'
+- task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
